@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - 26222A Logbook</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="../images/logo.png" alt="Bulldog Logo">
+    </div>
+    <div class="title">
+        <a href="../index.html">
+            <h1>H L Richards ADC Team 26222A</h1>
+            <h2>Logbook Jetsetter-Wookies</h2>
+        </a>
+    </div>
+</header>
+
+<section class="nav">
+    <div class="navv"><a href="../about/about.html">About</a></div>
+    <div class="navv"><a href="../Auto/auto.html">Autonomous Flight Code</a></div>
+    <div class="navv"><a href="../Safety/safety.html">Safety Plan</a></div>
+	<div class="navv"><a href="../Teamwork/teamwork.html">Teamwork</a></div>
+	<div class="navv"><a href="../Leadership/leadership.html">Leadership</a></div>
+	<div class="navv"><a href="../Objectives/objectives.html">Objectives</a></div>
+</section>
+
+<section class="auto-layout">
+
+<div class="left-side">
+        <h2>Autonomous Code</h2>
+        <p>
+1/21/26<br>
+Sokolewicz<br>
+Completed code part on 1/22/26 <br>
+Sokolewicz<br>
+
+        </p>
+    </div>
+
+    <div class="right-side">
+        <p>
+<del>from codrone_edu.drone import *
+
+drone = Drone()
+drone.connect()
+
+# Calibration heght for each gate/hole
+HEIGHT_ARCH_CM = 60
+HEIGHT_KEYHOLE_CM = 80
+HEIGHT_TUNNEL_CM = 70
+HEIGHT_PANEL_BIG_CM = 90
+# Big Hole:
+HEIGHT_PANEL_SMALL_CM =100
+#(colorscan)
+HEIGHT_COLOR_SCAN_CM =30
+#For flying over objects
+HEIGHT_CRUISE_CM=110
+
+#Tasking Distances
+DIST_TO_FIRST_TASK_CM = 100
+DIST_BETWEEN_TASK_CM = 50
+DIST_THROUGH_OBJECT_CM = 70 
+#Senor checking and Takeoff
+def preflight_check_and_takeoff(drone): 
+    #Preflight checking
+    print("[PRE-FLIGHT CHECK]")
+    #Check the battery
+    battery = drone.get_battery()
+    print(f"Battery: {battery}%")
+    #Gyro and Accelerometer Senor readdings
+    accel = drone.get_accelerometer()
+    gyro = drone.get_gyro()
+    print(f"IMU: Accel=({accel[0]},{accel[1]},{accel[2]}) | Gyro=({gyro[0]},{gyro[1]},{gyro[2]})")
+#Using range sensors front/bottom IR
+front_dist = drone.get_front_range(unit="cm")
+bottom_dist = drone.get_bottom_range(unit="cm")
+print(f"Range: Front={front_dist}cm | Bottom={bottom_dist}cm")
+drone.disconnect()
+</del>
+        </p>
+    </div>
+
+</section>
+
+</body>
+</html>
