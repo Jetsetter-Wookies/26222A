@@ -42,27 +42,27 @@ header {
 }
 
 .navv {
-    background: black;          /* black box */
+    background: black;         
     padding: 10px 20px;
     border-radius: 8px;
     transition: 0.2s;
-    border: 2px solid white;    /* optional: clean outline */
+    border: 2px solid white;    
 }
 
 .navv a {
-    color: white;               /* white text */
+    color: white;              
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
 }
 
 .navv:hover {
-    background: white;          /* reversed */
+    background: white;         
     transform: scale(1.05);
 }
 
 .navv:hover a {
-    color: black;               /* reversed text */
+    color: black;               
 }
 
 .slideshow {
@@ -243,19 +243,23 @@ header {
     color: gray;
 
 }
+
 .Safety-box {
-  width: 100%;
-  max-width: 1200px; 
-  margin: auto;
-  padding: 0 10px; 
+  max-width: 1200px;      
+  margin: auto;          
+  padding: 0 10px;        
+  display: flex;
+  flex-wrap: wrap;       
+  gap: 20px;              
 }
 
 
 .video-container {
+  flex: 1 1 400px;        
   position: relative;
-  width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
+  min-width: 300px;       
 }
 
 
@@ -267,6 +271,14 @@ header {
   height: 100%;
   border: none;
 }
+
+
+.text-content {
+  flex: 1 1 400px;        
+  min-width: 300px;
+  overflow-wrap: break-word; 
+}
+
 
 
 
