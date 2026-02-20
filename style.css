@@ -241,4 +241,10 @@ header {
 .box-section h3 {
     margin-top: 0;
     color: gray;
+
+}
+.Safety-box video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
