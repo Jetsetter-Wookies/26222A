@@ -279,7 +279,82 @@ header {
   overflow-wrap: break-word; 
 }
 
+/* ═══════════════════════════════════════
+   LEADERSHIP PAGE
+═══════════════════════════════════════ */
 
+.leadership-section {
+    padding: 50px 60px;
+    max-width: 860px;
+}
+
+.leadership-section h2 {
+    font-size: 40px;
+    color: #f5c518;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.gold-rule {
+    width: 60px;
+    height: 3px;
+    background: #f5c518;
+    margin: 10px 0 20px;
+}
+
+.leadership-intro {
+    font-size: 15px;
+    color: #bbb;
+    line-height: 1.75;
+    margin-bottom: 28px;
+    font-weight: 300;
+}
+
+.leader-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.leader-card {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 20px 24px;
+    transition: border-color 0.2s;
+}
+
+.leader-card:hover {
+    border-color: #f5c518;
+}
+
+.leader-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f5c518;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.leader-card .role {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.leader-card p {
+    font-size: 13px;
+    color: #999;
+    line-height: 1.55;
+}
+
+.leader-card.full-width {
+    grid-column: span 2;
+}
 
 
 
