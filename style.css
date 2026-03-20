@@ -299,6 +299,7 @@ header {
 .gold-rule {
     width: 60px;
     height: 3px;
+	color: #000000;
     background: #f5c518;
     margin: 10px 0 20px;
 }
