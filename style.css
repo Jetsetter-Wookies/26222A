@@ -38,7 +38,10 @@ header {
     justify-content: center;
     gap: 15px;
     padding: 40px;
-    background: black;
+    background: linear-gradient(to bottom, 
+        rgba(0, 0, 0, 1) 0%,      /* Solid black at top */
+        rgba(0, 0, 0, 0) 100%     /* Transparent at bottom */
+    );
 }
 
 .navv {
@@ -356,9 +359,3 @@ header {
 .leader-card.full-width {
     grid-column: span 2;
 }
-
-
-
-
-
-
